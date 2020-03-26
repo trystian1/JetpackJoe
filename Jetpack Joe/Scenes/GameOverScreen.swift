@@ -18,6 +18,8 @@ class GameOverScreen : SKScene {
     var jetpackJoeDeath : SKSpriteNode! = nil
     
     override func sceneDidLoad() {
+        SoundController.sharedInstance.playSound(scene: "gameover", index: 0);
+
         menuButton = SKSpriteNode(texture: menuButtonTexture);
         menuButton.position = CGPoint(x: size.width / 2, y: size.height - 320)
         addChild(menuButton);

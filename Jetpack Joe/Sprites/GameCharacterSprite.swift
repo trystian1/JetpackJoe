@@ -55,7 +55,6 @@ public class GameCharacter : SKSpriteNode {
     }
     
     public func removeBoom() {
-        print("REMOVE")
         boom.removeFromParent();
         boomFire.removeFromParent();
     }

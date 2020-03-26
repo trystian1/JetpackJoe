@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import MediaPlayer;
 
 class GameMenu : SKScene {
     let startButtonTexture = SKTexture(imageNamed: "start_button")
@@ -46,11 +47,11 @@ class GameMenu : SKScene {
         highScoreNode.fontColor = UIColor(red: 0.1725, green: 0.2431, blue: 0.3137, alpha: 1.0) /* #2c3e50 */
         highScoreNode.position = CGPoint(x: size.width / 2, y: size.height - 120)
         highScoreNode.zPosition = 1
-        
+        SoundController.sharedInstance.playSound(scene: "menu", index: 0);
         addChild(highScoreNode)
         
     }
-    
+      
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             if (startButton.contains(touch.location(in: self))) {
@@ -62,6 +63,7 @@ class GameMenu : SKScene {
         }
         
     }
+    
 }
 
 

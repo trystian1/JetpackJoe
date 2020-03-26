@@ -10,6 +10,7 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    
     private var lastUpdateTime : TimeInterval = 0
     private var gameCharacter = GameCharacter.newInstance();
     private var background = BackgroundSprite();
@@ -23,14 +24,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     private var gameStarted : Bool =  false;
     private var starsSpawned : Bool = false;
     private var gameOver: Bool = false;
-    
+     
     override func sceneDidLoad() {
         // spawn character
-        var worldFrame = frame
+        var worldFrame = frame;
         worldFrame.origin.x -= 100
         worldFrame.origin.y -= 100
         worldFrame.size.height += 200
         worldFrame.size.width += 200
+        
+    
         
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: worldFrame)
         self.physicsBody?.categoryBitMask = WorldCategory
@@ -55,6 +58,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.gameStarted = true
             self.systemText.removeFromParent()
         }
+        
+        SoundController.sharedInstance.playSound(scene: "game", index: 0);
     }
     
     func setTimeout(_ delay:TimeInterval, block:@escaping ()->Void) -> Timer {
@@ -114,7 +119,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let touchPoint = touches.first?.location(in: self)
         
         if let point = touchPoint {
-            gameCharacter.setDestination(destination: point)
+            
+            if (frame.contains(point)) {
+              gameCharacter.setDestination(destination: point)
+            }
+            
         }
     }
     
@@ -122,7 +131,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let touchPoint = touches.first?.location(in: self)
         
         if let point = touchPoint {
+          if (frame.contains(point)) {
             gameCharacter.setDestination(destination: point)
+          }
         }
 
     }
