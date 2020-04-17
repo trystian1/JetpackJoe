@@ -22,7 +22,7 @@ class SoundController : NSObject, AVAudioPlayerDelegate {
             } else {
                 currentSoundIndex = index;
             }
-            print(soundToPlay[currentSoundIndex]);
+            
             let soundURL = Bundle.main.url(forResource: soundToPlay[currentSoundIndex], withExtension: "mp3")
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: soundURL!)

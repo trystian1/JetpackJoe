@@ -9,13 +9,13 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import GameKit
 
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // let sceneNode = GameScene(size: view.frame.size)
+        GameCenter.shared.authenticateLocalPlayer(presentingVC: self)
         let menuNode = GameMenu(size: view.frame.size);
         if let view = self.view as! SKView? {
             view.presentScene(menuNode)
@@ -27,6 +27,19 @@ class GameViewController: UIViewController {
         }
     }
 
+    func authenticateLocalPlayer() {
+        let localPlayer = GKLocalPlayer.local
+        
+        localPlayer.authenticateHandler = {(viewController, error) -> Void in
+
+            if (viewController != nil) {
+                self.present(viewController!, animated: true, completion: nil)
+            }
+            else {
+                print((GKLocalPlayer.local.isAuthenticated))
+            }
+        }
+    }
     override var shouldAutorotate: Bool {
         return false
     }

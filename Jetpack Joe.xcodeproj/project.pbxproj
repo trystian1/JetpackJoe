@@ -13,13 +13,22 @@
 		2804D69523AD1AD30082473A /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2804D69423AD1AD30082473A /* gameover.mp3 */; };
 		2804D69723AD1ADA0082473A /* menu2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2804D69623AD1ADA0082473A /* menu2.mp3 */; };
 		2804D69923AD1B4D0082473A /* game2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2804D69823AD1B4D0082473A /* game2.mp3 */; };
+		280FE028243A1CDC00EADF38 /* GameProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE027243A1CDC00EADF38 /* GameProperties.swift */; };
+		280FE02A243A238F00EADF38 /* GameModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE029243A238F00EADF38 /* GameModeSelector.swift */; };
+		282B38A12430EFA900EEFCB2 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285FBFC6242F438800B46CD6 /* GameKit.framework */; };
 		282BB441229C511300C1BE5F /* boom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 282BB440229C511300C1BE5F /* boom.sks */; };
 		282BB443229C546000C1BE5F /* boom_fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 282BB442229C546000C1BE5F /* boom_fire.sks */; };
 		282BB449229D51FD00C1BE5F /* smoky.sks in Resources */ = {isa = PBXBuildFile; fileRef = 282BB448229D51FD00C1BE5F /* smoky.sks */; };
 		282BB44B229D539500C1BE5F /* fire_meteor.sks in Resources */ = {isa = PBXBuildFile; fileRef = 282BB44A229D539500C1BE5F /* fire_meteor.sks */; };
+		283A5C6D243E0E9F00600727 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A5C6C243E0E9F00600727 /* Button.swift */; };
+		283A5C6F24404FB900600727 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283A5C6E24404FB900600727 /* StoreKit.framework */; };
+		283A5C72244083DA00600727 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283A5C71244083DA00600727 /* AuthenticationServices.framework */; };
+		283A5C742440AA4100600727 /* Payments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283A5C732440AA4100600727 /* Payments.swift */; };
 		2842C6BA22946B3B005C0252 /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2842C6B822946B3B005C0252 /* Smoke.sks */; };
 		2842C6BD22947FB8005C0252 /* bokeh.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2842C6BC22947FB8005C0252 /* bokeh.sks */; };
 		2842C6BF22948005005C0252 /* rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2842C6BE22948005005C0252 /* rain.sks */; };
+		28516D59242CCB8E00852FB1 /* HighScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28516D58242CCB8E00852FB1 /* HighScores.swift */; };
+		285FBFC4242E427900B46CD6 /* GameCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285FBFC3242E427900B46CD6 /* GameCenter.swift */; };
 		287AFC592295A60B00DF1613 /* fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 287AFC582295A60B00DF1613 /* fire.sks */; };
 		287AFC5C2295BBF900DF1613 /* BalooBhai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 287AFC5B2295BB9900DF1613 /* BalooBhai-Regular.ttf */; };
 		287AFC5F2295C22D00DF1613 /* GameMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AFC5E2295C22D00DF1613 /* GameMenu.swift */; };
@@ -66,13 +75,24 @@
 		2804D69423AD1AD30082473A /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gameover.mp3; path = ../../../../../Downloads/gameover.mp3; sourceTree = "<group>"; };
 		2804D69623AD1ADA0082473A /* menu2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = menu2.mp3; path = ../../../../../Downloads/menu2.mp3; sourceTree = "<group>"; };
 		2804D69823AD1B4D0082473A /* game2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = game2.mp3; path = ../../../../../Downloads/game2.mp3; sourceTree = "<group>"; };
+		280FE027243A1CDC00EADF38 /* GameProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProperties.swift; sourceTree = "<group>"; };
+		280FE029243A238F00EADF38 /* GameModeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeSelector.swift; sourceTree = "<group>"; };
 		282BB440229C511300C1BE5F /* boom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = boom.sks; sourceTree = "<group>"; };
 		282BB442229C546000C1BE5F /* boom_fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = boom_fire.sks; sourceTree = "<group>"; };
 		282BB448229D51FD00C1BE5F /* smoky.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smoky.sks; sourceTree = "<group>"; };
 		282BB44A229D539500C1BE5F /* fire_meteor.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fire_meteor.sks; sourceTree = "<group>"; };
+		283A5C6C243E0E9F00600727 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		283A5C6E24404FB900600727 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		283A5C70244083D800600727 /* Jetpack Joe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Jetpack Joe.entitlements"; sourceTree = "<group>"; };
+		283A5C71244083DA00600727 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		283A5C732440AA4100600727 /* Payments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payments.swift; sourceTree = "<group>"; };
 		2842C6B822946B3B005C0252 /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
 		2842C6BC22947FB8005C0252 /* bokeh.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bokeh.sks; sourceTree = "<group>"; };
 		2842C6BE22948005005C0252 /* rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = rain.sks; sourceTree = "<group>"; };
+		28516D58242CCB8E00852FB1 /* HighScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScores.swift; sourceTree = "<group>"; };
+		285FBFC3242E427900B46CD6 /* GameCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenter.swift; sourceTree = "<group>"; };
+		285FBFC6242F438800B46CD6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		285FBFC8242F44CE00B46CD6 /* Jetpack JoeRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Jetpack JoeRelease.entitlements"; sourceTree = "<group>"; };
 		287AFC582295A60B00DF1613 /* fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fire.sks; sourceTree = "<group>"; };
 		287AFC5B2295BB9900DF1613 /* BalooBhai-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BalooBhai-Regular.ttf"; path = "../../../../../Downloads/Baloo_Bhai/BalooBhai-Regular.ttf"; sourceTree = "<group>"; };
 		287AFC5E2295C22D00DF1613 /* GameMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenu.swift; sourceTree = "<group>"; };
@@ -106,6 +126,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283A5C72244083DA00600727 /* AuthenticationServices.framework in Frameworks */,
+				282B38A12430EFA900EEFCB2 /* GameKit.framework in Frameworks */,
+				283A5C6F24404FB900600727 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +161,24 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		283A5C6B243E0E9000600727 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				283A5C6C243E0E9F00600727 /* Button.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		285FBFC5242F438800B46CD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				283A5C71244083DA00600727 /* AuthenticationServices.framework */,
+				283A5C6E24404FB900600727 /* StoreKit.framework */,
+				285FBFC6242F438800B46CD6 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		287AFC5A2295BB7F00DF1613 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +193,8 @@
 				28D6740E21EE6A720059FC0D /* GameScene.swift */,
 				287AFC5E2295C22D00DF1613 /* GameMenu.swift */,
 				287AFC602295CE8300DF1613 /* GameOverScreen.swift */,
+				28516D58242CCB8E00852FB1 /* HighScores.swift */,
+				280FE029243A238F00EADF38 /* GameModeSelector.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -163,6 +206,7 @@
 				28D6742221EE6A770059FC0D /* Jetpack JoeTests */,
 				28D6742D21EE6A770059FC0D /* Jetpack JoeUITests */,
 				28D6740621EE6A720059FC0D /* Products */,
+				285FBFC5242F438800B46CD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +223,9 @@
 		28D6740721EE6A720059FC0D /* Jetpack Joe */ = {
 			isa = PBXGroup;
 			children = (
+				283A5C70244083D800600727 /* Jetpack Joe.entitlements */,
+				283A5C6B243E0E9000600727 /* Components */,
+				285FBFC8242F44CE00B46CD6 /* Jetpack JoeRelease.entitlements */,
 				2804D68D23AD11FF0082473A /* Sounds */,
 				287AFC5D2295C20C00DF1613 /* Scenes */,
 				287AFC5A2295BB7F00DF1613 /* Fonts */,
@@ -193,6 +240,9 @@
 				28D6741A21EE6A760059FC0D /* Info.plist */,
 				287D335B22916C1B009851EA /* Constants.swift */,
 				2804D69223AD12BB0082473A /* SoundController.swift */,
+				285FBFC3242E427900B46CD6 /* GameCenter.swift */,
+				280FE027243A1CDC00EADF38 /* GameProperties.swift */,
+				283A5C732440AA4100600727 /* Payments.swift */,
 			);
 			path = "Jetpack Joe";
 			sourceTree = "<group>";
@@ -303,7 +353,7 @@
 				TargetAttributes = {
 					28D6740421EE6A720059FC0D = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1130;
 					};
 					28D6741E21EE6A770059FC0D = {
 						CreatedOnToolsVersion = 10.1;
@@ -389,13 +439,19 @@
 			files = (
 				287AFC612295CE8300DF1613 /* GameOverScreen.swift in Sources */,
 				2804D69323AD12BB0082473A /* SoundController.swift in Sources */,
+				285FBFC4242E427900B46CD6 /* GameCenter.swift in Sources */,
 				287AFC5F2295C22D00DF1613 /* GameMenu.swift in Sources */,
 				28D6740F21EE6A720059FC0D /* GameScene.swift in Sources */,
+				280FE02A243A238F00EADF38 /* GameModeSelector.swift in Sources */,
 				287D335A22916AE9009851EA /* BackgroundSprite.swift in Sources */,
 				28D6741121EE6A720059FC0D /* GameViewController.swift in Sources */,
 				28D6743E21EE6DCD0059FC0D /* GameCharacterSprite.swift in Sources */,
+				280FE028243A1CDC00EADF38 /* GameProperties.swift in Sources */,
+				283A5C742440AA4100600727 /* Payments.swift in Sources */,
+				283A5C6D243E0E9F00600727 /* Button.swift in Sources */,
 				287D335E229180C9009851EA /* HudNode.swift in Sources */,
 				28D6740921EE6A720059FC0D /* AppDelegate.swift in Sources */,
+				28516D59242CCB8E00852FB1 /* HighScores.swift in Sources */,
 				287D335C22916C1B009851EA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +627,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Jetpack Joe/Jetpack Joe.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R794VDR987;
 				INFOPLIST_FILE = "Jetpack Joe/Info.plist";
@@ -578,8 +636,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "trystian.Jetpack-Joe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -589,6 +650,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Jetpack Joe/Jetpack JoeRelease.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R794VDR987;
 				INFOPLIST_FILE = "Jetpack Joe/Info.plist";
@@ -596,8 +659,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "trystian.Jetpack-Joe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

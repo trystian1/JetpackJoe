@@ -57,17 +57,17 @@ class HudNode : SKNode {
     }
     
     public func getLives() -> Int {
-        return lives;
+        return GameProperties.shared.getLives();
     }
-    
+  
     public func decreaseLives() {
-        lives = lives - 1;
+        GameProperties.shared.decreaseLives();
         updateScoreboard();
     }
  
     public func updateScoreboard() {
         scoreNode.text = "Distance: \(HudNode.score)"
-        livesNode.text = "x \(lives)"
+        livesNode.text = "x \(GameProperties.shared.getLives())"
     }
     
 }

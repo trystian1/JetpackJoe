@@ -8,6 +8,7 @@
 
 import SpriteKit
 import GameplayKit
+import GameKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
@@ -140,11 +141,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func decreaseLives() {
         hitByEnemy();
-        if (hudNode.getLives() > 1) {
+        if (GameProperties.shared.getLives() > 1) {
             hudNode.decreaseLives()
         } else {
             gameOver = true;
             self.physicsWorld.speed = 0;
+            saveHighscore(gameScore: HudNode.score);
             systemText.fontSize = 50;
             systemText.position = CGPoint(x: size.width / 2, y: size.height / 2);
             systemText.text = "GAME OVER"
@@ -157,6 +159,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 let gameOverScreen = GameOverScreen(size: self.size)
                 self.view?.presentScene(gameOverScreen, transition: transition)
             }
+        }
+    }
+    
+    func saveHighscore(gameScore: Int) {
+
+        print("Player has been authenticated.")
+
+        if GKLocalPlayer.local.isAuthenticated {
+            let scoreReporter = GKScore(leaderboardIdentifier: GameProperties.shared.getLeaderBoardId())
+            scoreReporter.value = Int64(gameScore)
+            let scoreArray: [GKScore] = [scoreReporter]
+        
+            GKScore.report(scoreArray, withCompletionHandler: {error -> Void in
+                if error != nil {
+                    print("An error has occured: \(String(describing: error))")
+                }
+            })
         }
     }
     
@@ -207,7 +226,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let dt = currentTime - self.lastUpdateTime
         enemySpawned += dt
         gameCharacter.update(deltaTime: dt)
-
         if enemySpawned > spawnTimer {
             enemySpawned = 0
             addCircle();

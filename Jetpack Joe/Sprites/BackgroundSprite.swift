@@ -78,7 +78,7 @@ public class BackgroundSprite : SKNode {
         let calculationPercentage = Double(-1 * abs(percentage));
         let newColor = CGFloat(min(Double(color) + calculationPercentage/100, 1.0))
         if (newColor < -1) {
-            alpha = 0.7;
+            alpha = 0.5;
         }
         return newColor > -1 ? newColor : color;
     }
